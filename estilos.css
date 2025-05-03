@@ -1,11 +1,5 @@
-/*.cal-sans-regular {
-    font-family: "Cal Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-} Fuente cal sans (clase)*/ 
-
 body {
-    margin: 0 auto;
+    margin: 0 0;
     padding: 0;
     height: 100%;
 }
@@ -14,40 +8,77 @@ body {
 
 header {
     display: inline-flex;
-    height: 100%;
+    height: 100px;
     width: 100%;
     justify-content: space-around;
     padding: 5px;
     background-color: #6495ed;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 header div {
-    width: 100px;
+    width: 30%;
     height: 100px;
     align-content: center;
     text-align: center;
 }
 
 
-#logoheadr {
-    width: 100%;
+.logoheader {
+    width: 100px;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
+    float: left
+    ;
 }
 
-#buscador {
-    
+.buscador-header {
+    border-radius: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 300px;
+    height: 30px;
+    color: #6495ed;
+}
+
+.botones-header {
+    margin: 0 5px;
+    float: right;
+    height: 50px;
+    width: 100px;
 }
 
 .botones {
-
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s;
+    border-radius: 10px;
+    background-color: #6495ed;
+    color: #ffffff;
 }
 
-h1 {
-    text-align: center;
+.botones:hover {
+    background-color: #ffffff;
+    color: #6495ed;
+    transition: all 0.5s;
+    
+}
+
+.botones:active {
+    background-color: #6495ed;
+    color: #ffffff;
+    transform: scale(0.8);
+}
+
+.titulo-inicio {
     font-size: 100px;
-    align-items: flex-start;
     margin: 15px;
+    color: #ffffff;
+    letter-spacing: 2px;
     text-shadow:
     -3px -3px 0 #6495ed,
     3px -3px 0 #6495ed,
@@ -59,19 +90,107 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     flex-direction: column;
-    margin: 40px;
-    height: 70vh;
-    
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #ccc;
 }
-/*div div {
-    width: 30%;
-    height: 50%;
-    margin: 0 10px 5px 10px;
+
+.contenedor-h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-medio {
+    font-size: 50px;
+    margin: 15px;
+    color: #ffffff;
+    background-color: #6495ed;
+    border-radius: 35px;
+    width: 300px;
     text-align: center;
-    
-} */
+
+}
+
+.contenedor-conexiones {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 85vh;
+    margin: 0;
+    align-items: flex-start;
+}
+
+.colum {
+    text-align: center;
+}
+
+.columna-1{
+    width: 25%;
+    margin: 0;
+    display: block;
+}
+
+.columna-2{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  grid-template-rows: repeat(2, auto);   /* 2 filas */
+    gap: 50px;
+    max-width: 600px;
+    margin: 0;
+    max-height: 50%
+    ;
+    padding-top: 100px;
+}
+
+.columna-3{
+    width: 25%;
+    margin: 0;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    background-color: #6495ed;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+    width: 200px;
+    height: 200px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+}
+
+.imagen-items {
+    width: 11rem;
+    height: 11rem;
+    border: 1px solid black;
+}
+
+.texto-item {
+    width: 50%;
+    margin: 0;
+    text-align: left;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.contenedor-final {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 90vh;
+    background-color: #ccc;
+}
+
+
+footer {
+    width: 100%;
+    height: 30vh;
+}
 
 * {
     font-family: "Cal Sans", sans-serif;
