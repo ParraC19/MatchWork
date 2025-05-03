@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros</title>
+    <link rel="icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+</head>
+<body style="text-align: center;"> 
+    <header>
+        <div>
+            <img src="/imagenes/LogoMW.jpg" id="logoheadr">
+        </div>
+        <div>
+            <form>
+                <input type="text" name="buscador" id="buscador" placeholder="Buscar">
+            </form>
+        </div>
+        <div>
+            <button class="botones">Talento</button>
+            <button class="botones">Caza Talento</button>
+        </div>
+    </header>
+    <section style="text-align: center; margin: 2%; margin-left: 30%; margin-right: 30% ;background-color: aqua;">
+        <h1>Registro de Usuarios</h1>
+        <form action="" method="get" autocomplete="on"></form>
+            <label for="nombre">Nombre Completo</label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="correo">Correo Electronico</label><br> 
+            <input type="email" id="correo" name="email"><br><br>
+
+            <label for="password" aria-required="true">Contraseña</label><br> 
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="repeatpassword" aria-required="true">Repetir contraseña</label><br>
+            <input type="password" id="repeatpassword" name="repeatpassword" required><br><br>
+
+            <label for="telefono">Telefono</label><br>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+
+            <label for="foto">Foto</label><br>
+            <input type="file" id="foto" name="foto"><br><br>
+
+            <label for="genero">Genero:</label><br> 
+            <select id="genero" name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select> <br><br>
+
+            <label for="pais">Pais</label><br> 
+            <select id="pais" name="pais">
+                <option value="colombia">Colombia</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="argentina">Argentina</option>
+                
+            </select> <br><br><br>
+
+            <label for="tipo_documento">Tipo de Documento</label><br>
+            <select id="tipo_documento" name="tipo_documento">
+                <option value="cedula">Cedula</option>
+                <option value="tarjeta_identidad">Tarjeta de Identidad</option>
+                <option value="tarjeta_extranjeria">Tarjeta de Extranjería </option>
+                <option value="cedula_extranjeria">Cédula de Extranjería</option>
+            </select> <br><br><br>
+
+            <label for="documento" aria-required="true">Numero de Documento</label><br>
+            <input type="text" id="documento" name="documento"><br><br>
+
+            <label for="Match" aria-required="true">Que quieres ser?</label><br>
+                Colaborador<input type="radio" id="que-soy" name="soy">
+                Cliente<input type="radio" id="que-soy" name="soy"> <br><br>
+
+            <button><a href="/Inicio_sesion/inicio_client.html">Enviar</a></button>
+    </section> 
+
+</body>
+</html>
