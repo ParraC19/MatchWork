@@ -26,6 +26,7 @@ header div {
 }
 
 
+
 .logoheader {
     width: 100px;
     height: 100%;
@@ -34,11 +35,12 @@ header div {
     ;
 }
 
+
+
 .buscador-header {
     border-radius: 20px;
-    text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
     border: none;
     width: 300px;
     height: 30px;
@@ -48,8 +50,15 @@ header div {
 .botones-header {
     margin: 0 5px;
     float: right;
-    height: 50px;
+    height: 30px;
     width: 100px;
+}
+
+
+.botones-header:hover .accion-header {
+    background-color: #ffffff;
+    color: #6495ed;
+    transition: 0.5s;
 }
 
 .botones {
@@ -65,25 +74,12 @@ header div {
     background-color: #ffffff;
     color: #6495ed;
     transition: all 0.5s;
-    
 }
 
 .botones:active {
     background-color: #6495ed;
     color: #ffffff;
     transform: scale(0.8);
-}
-
-.titulo-inicio {
-    font-size: 100px;
-    margin: 15px;
-    color: #ffffff;
-    letter-spacing: 2px;
-    text-shadow:
-    -3px -3px 0 #6495ed,
-    3px -3px 0 #6495ed,
-    -3px 3px 0 #6495ed,
-    3px 3px 0 #6495ed; 
 }
 
 .contenedor_prin {
@@ -93,13 +89,68 @@ header div {
     flex-direction: column;
     margin: 0 auto;
     height: 100vh;
-    background-color: #ccc;
+    background-color: #fff;
+}
+
+.titulo-inicio {
+    display: flex;
+    align-items: center;
+    font-size: 100px;
+    margin: 0px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    height:100px ;
+    text-shadow:
+    -3px -3px 0 #6495ed,
+    3px -3px 0 #6495ed,
+    -3px 3px 0 #6495ed,
+    3px 3px 0 #6495ed; 
+}
+
+.parrafo-inicio {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    color: #bbb;
+    font-size: 24px;
+}
+
+.texto-matchwork {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 25px;
+    width: 50%;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.botones-inicio {
+    margin: 0 20px;
+    padding: 0 5px;
+    border-radius: 50px;
+    height: 40px;
+    width: 120px;
+    
+    border: 1px solid #6495ed;
+}
+
+.botones-inicio:hover .accion-inicio {
+    background-color: #ffffff;
+    color: #6495ed;
+    transition: 1s;
 }
 
 .contenedor-h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .titulo-medio {
@@ -117,12 +168,14 @@ header div {
     display: inline-flex;
     justify-content: space-around;
     width: 100%;
-    height: 85vh;
+    height: 79vh;
     margin: 0;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 
 .colum {
+    display: flex;
     text-align: center;
 }
 
@@ -134,43 +187,39 @@ header div {
 
 .columna-2{
     display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-  grid-template-rows: repeat(2, auto);   /* 2 filas */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(2, auto);   /* 2 filas */
     gap: 50px;
     max-width: 600px;
     margin: 0;
-    max-height: 50%
-    ;
-    padding-top: 100px;
-}
-
-.columna-3{
-    width: 25%;
-    margin: 0;
+    max-height: 50%;
+    align-content: center;
+    
 }
 
 .items {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #6495ed;
     padding: 20px;
     border-radius: 12px;
-    text-align: center;
     font-size: 18px;
-    width: 200px;
-    height: 200px;
-    align-items: flex-start;
-    justify-content: center;
     gap: 5px;
 }
 
 .imagen-items {
-    width: 11rem;
-    height: 11rem;
-    border: 1px solid black;
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid #fff;
+    justify-content: center;
 }
 
-.texto-item {
+#imagen-item {
+    width: 100%;
+    align-items: center;
+}
+
+.texto-items {
     width: 50%;
     margin: 0;
     text-align: left;
@@ -178,22 +227,261 @@ header div {
     flex: 1;
 }
 
+#titulo-item, #parrafo-item {
+    margin: auto;
+    color: #eee;
+    letter-spacing: 0.5px;
+}
+
 .contenedor-final {
-    display: inline-flex;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
-    height: 90vh;
-    background-color: #ccc;
+    height: 79vh;
+    margin: 0;
+    align-items:center;
+}
+
+#titulo-bloque-final {
+    display: flex;
+    
+}
+
+.bloque-central-final {
+    display: flex;
+    width: 70%;
+    height: 300px;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.bloque-izquierdo {
+    display: flex;
+    float: left;
+    text-align: center;
+    flex-direction: column;
+    width: 45% ;
+    background-color: #6495ed;
+    border-radius: 30px;
+}
+
+#titulo-bloques {
+    color: #fff;
+    letter-spacing: 1px;
+    height: 30%;
+    align-content: center;
+    padding: 0 20px;
+    margin: 20px 20px 0 20px;
+    font-size: 20px;
+}
+
+#titulo-bloques h3 {
+    font-size: 30px;
 }
 
 
-footer {
+
+#texto-bloque {
+    color: #fff;
+    height: 70%;
+    padding: 0 20px;
+    margin: 20px;
+    font-size: 18px;
+    align-items: flex-start;
+    display: flex;
+}
+
+.bloque-derecho {
+    display: flex;
+    float:right;
+    text-align: center;
+    flex-direction:column;
+    width: 45% ;
+    background-color: #6495ed;
+    border-radius: 30px;
+}
+
+.bloque-final {
     width: 100%;
-    height: 30vh;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 50%;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    color: #6495ed;    
+}
+
+.lista li {
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+}
+
+footer {
+    display: inline-flex;
+    
+    width: 100%;
+    height: 20vh;
+    background-color: #6495ed;
+    color: #fff;
+    justify-content: space-around;
+}
+
+.redes-footer {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.terminos-footer {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.nombre-footer {
+    display: flex;
+    align-items: center;
+}
+
+.inicio-sesion {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    margin: 289px auto;
+    justify-content: center;
+    background-color: #6495ed;
+    border-radius:20px ;
+}
+
+.imagen-inicio-sesion {
+    width: 150px;
+}
+
+.form-inicio-sesion {
+    text-align: center;
+    color: #fff;
+}
+
+.boton-sesion {
+    margin: 0 5px;
+    height: 30px;
+    width: 70px;
+}
+
+.accion-sesion {
+    height: 30px;
+    width: 70px;
+}
+
+.boton-sesion:hover .accion-sesion {
+    background-color: #fff;
+    color: #6495ed;
+    transition: all 1s;
+}
+
+.inicio-sesion input {
+    border-radius: 20px;
+    border: none;
+}
+
+.contenedor-registro {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    margin: 164px auto;
+    background-color: #6495ed;
+    border-radius:20px ;
+    gap: 0px;
+    color: #fff;
+}
+
+.logo-registro, .logo-registro img {
+    width: 150px;
+    height: 150px;
+}
+
+.titulo-registro {
+    display: flex;
+    height: 15%;
+    align-items: center;
+    ;
+}
+
+.titulo-registro h1 {
+    font-size: 25px;
+    letter-spacing: 2px
+}
+
+.registro {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,auto);
+    gap: 16px;
+    max-width: 600px;
+    height: 70%;
+    margin: 0 auto;
+}
+
+.registro input {
+    border-radius: 30px;
+    border: none;
+}
+
+.registro select {
+    background-color: #fff;
+    color: #6495ed;
+    border-radius: 30px;
+    height: 25px;
+    width: 150px;
+}
+
+.espacio-boton-registro {
+    height: 15%;
+    display: flex;
+    grid-column: span 2;
+}
+
+.boton-registro {
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.boton-registro:hover .accion-registro {
+    background-color: #fff;
+    color: #6495ed;
+    transition: 1s;
+}
+
+.campo-registro {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-registro-radius {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 * {
     font-family: "Cal Sans", sans-serif;
     font-size: 14px;
+    margin: 0 auto;
 }
 

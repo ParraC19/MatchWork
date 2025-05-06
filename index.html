@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MatchWork2</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>MatchWork</title>
+    <link rel="stylesheet" href="/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="/imagenes/favicon.png">
 </head>
 <body>
     <header>
         <div>
-            <img src="./imagenes/LogoMW.jpg" class="logoheader">
+            <a><img src="/imagenes/LogoMWblanco.png" class="logoheader boton-img"></a>
         </div>
         <div>
             <form>
@@ -20,61 +21,126 @@
             </form>
         </div>
         <div>
-            <button class="botones botones-header">Sing in</button>
-            <button class="botones botones-header">Log in</button>
+            <button class="botones botones-header"><a href="/registros/registro.html" class="accion-header">Sign up</a></button>
+            <button class="botones botones-header"><a href="/Inicio_sesion/inicio-sesion.html" class="accion-header">Log in</a></button>
         </div>
     </header>
     <div class="contenedor_prin">
-        <h1 class="titulo-inicio">MatchWork</h1>
-        <nav>
-            <a href="incio">inicio</a>
-            <a href="incio">inicio</a>
-            <a href="incio">inicio</a>
-            
-        </nav>
+        <div class="texto-matchwork">
+            <h1 class="titulo-inicio">MatchWork</h1>
+            <p class="parrafo-inicio">Conecta tu talento con quienes lo necesitan. Únete y descubre un mundo de oportunidades donde tus habilidades pueden marcar la diferencia.</p>
+        </div>
+        <div>
+            <nav class="ancla-boton">
+                <button class="botones botones-inicio">
+                    <a href="/match_center/match_center.html" class="accion-inicio">Buscar talento</a>
+                </button>
+                <button class="botones botones-inicio">
+                    <a href="/match_center/match_center.html" class="accion-inicio">Ofrecer talento</a>
+                </button>
+            </nav>
+        </div>
     </div>
     <div class="contenedor-h2">
         <h2 class="titulo-medio">Conexiones</h2>
     </div>
     <div class="contenedor-conexiones">   
         <div class="colum columna-1">
-            hola1
+            <div>
+                <h2></h2>
+            </div>
+            <img src="/imagenes/persona-señal.png" alt="persona.png">
         </div>
         <div class="colum columna-2">
             <div class="items">
-                <img src="img1.jpg" alt="Imagen 1" class="imagen-items">
-                <h3 class="texto-item">Título 1</h3>
-                <p class="texto-item">Texto descriptivo.</p>
+                <div class="imagen-items">
+                    <img src="/imagenes/diseñador.jpg" alt="Imagen 1" id="imagen-item">
+                </div>
+                <div class="texto-items">
+                    <h3 id="titulo-item">Diseño Grafico</h3>
+                    <p id="parrafo-item">Texto descriptivo.</p>
+                </div>
             </div>
             <div class="items">
-                <img src="img1.jpg" alt="Imagen 1" class="imagen-items">
-                <h3 class="texto-item">Título 1</h3>
-                <p class="texto-item">Texto descriptivo.</p>
+                <div class="imagen-items">
+                    <img src="/imagenes/Programacion.jpg" alt="Imagen 1" id="imagen-item">
+                </div>
+                <div class="texto-items">
+                    <h3 id="titulo-item">Programacion</h3>
+                    <p id="parrafo-item">Texto descriptivo.</p>
+                </div>
             </div>
             <div class="items">
-                <img src="img1.jpg" alt="Imagen 1" class="imagen-items">
-                <h3 class="texto-item">Título 1</h3>
-                <p class="texto-item">Texto descriptivo.</p>
+                <div class="imagen-items">
+                    <img src="/imagenes/marketing.jpg" alt="Imagen 1" id="imagen-item">
+                </div>
+                <div class="texto-items">
+                    <h3 id="titulo-item">Marketing</h3>
+                    <p id="parrafo-item">Texto descriptivo.</p>
+                </div>
             </div>
             <div class="items">
-                <img src="imagenes/iniciosesion.png" alt="Imagen 1" class="imagen-items">
-                <h3 class="texto-item">Título 1</h3>
-                <p class="texto-item">Texto descriptivo.</p>
+                <div class="imagen-items">
+                    <img src="/imagenes/asis-virtual.jpg" alt="Imagen 1" id="imagen-item">
+                </div>
+                <div class="texto-items">
+                    <h3 id="titulo-item">Asistente virtual</h3>
+                    <p id="parrafo-item">Texto descriptivo.</p>
+                </div>
             </div>
-        </div>
-        <div class="colum columna-3">
-            hola3
         </div>
     </div>
     <div class="contenedor-final">
-        <div>
-
+        <div class="contenedor-h2" id="titulo-bloque-final">
+            <h2 class="titulo-medio">Descubre</h2>
         </div>
-        <div>
+        <div class="bloque-central-final">
+            <div class="bloque-izquierdo">
+                <div id="titulo-bloques">
+                    <h3>Encuentra al talento perfecto en minutos</h3>
+                </div>
+                <div id="texto-bloque">
+                    ¿Buscas a alguien para tu proyecto? Nuestra red reúne a profesionales verificados y apasionados en distintas áreas. Ahorra tiempo, accede a perfiles listos para actuar y lleva tu idea al siguiente nivel con la persona adecuada a tu lado.
+                </div>
+            </div>
+            <div class=bloque-derecho>
+                <div id="titulo-bloques">
+                    <h3>Conecta tu habilidad con el mundo.</h3>
+                </div>
+                <div id="texto-bloque">
+                    En nuestra plataforma, tu talento no pasa desapercibido. Aquí puedes mostrar tu experiencia, encontrar oportunidades reales y trabajar con personas o empresas que valoran lo que haces.Hazlo visible. Hazlo rentable.
 
+
+                </div>
+            </div>
+        </div>
+        <div class="bloque-final">
+            <ul class="lista">
+                <li>Programacion Web</li>
+                <li>Marketing</li>
+                <li>Asistentes virtual</li>
+                <li>Community manager</li>
+                <li>Diseñador grafico</li>
+                <li>Copywriter</li>
+            </ul>
         </div>
     </div>
     <footer>
+        <div class="redes-footer">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://tiktok.com" target="_blank">TikTok</a>
+        <a href="https://youtube.com" target="blank">YouTube</a>
+        </div>
+        <div class="nombre-footer">
+            <p>
+                MatchWork © 2025
+            </p>
+        </div>
+        <div class="terminos-footer">
+                <a href="/terminos">Términos y Condiciones</a> 
+                <a href="/privacidad">Política de Privacidad</a> 
+                <a href="/contacto">Contacto</a>
+        </div>
         
     </footer>
 </body>
