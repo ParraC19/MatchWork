@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Center</title>
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="/imagenes/favicon.png">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/index.html">
+                <img src="/imagenes/LogoMWblanco.png" class="logo-header">
+            </a>
+        </div>
+        <div>
+            <form>
+                <input type="text" name="buscador" class="buscador-header" placeholder="Buscar">
+            </form>
+        </div>
+        <div>
+            <button class="botones botones-header"><a href="/registros/registro.html" class="accion-header">Sign up</a></button>
+            <button class="botones botones-header"><a href="/Inicio_sesion/inicio-sesion.html" class="accion-header">Log in</a></button>
+        </div>
+    </header>
+    <div class="contenedor-titulo-match">
+        <h1 class="titulo-match">Match Center</h1>
+    </div>
+    <div class="busqueda-filtros">   
+        <div class="columna-filtros">
+            <div class="contenedor-filtros">
+                <div>
+                    <label for="profesion">¿Cual Es Tu Profesion?</label>
+                    <select name="profesion" id="profesion">
+                        <option name="profesion"     id="profesion">Selecciona</option>
+                        <option name="profesion"     id="profesion">Desarrollador De Software</option>
+                        <option name="profesion"     id="profesion">Diseñador Grafico</option>
+                        <option name="profesion"     id="profesion">Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="xp">¿Años De Experiencia?</label>
+                    <select name="xp" id="xp">
+                        <option name="xp"     id="xp">Selecciona</option>
+                        <option name="xp"     id="xp">1</option>
+                        <option name="xp"     id="xp">2</option>
+                        <option name="xp"     id="xp">3</option>
+                        <option name="xp"     id="xp">4</option>
+                        <option name="xp"     id="xp">Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="idiomas">Idiomas Que Hablas</label>
+                    <select name="idiomas" id="idiomas">
+                        <option name="idiomas"     id="idiomas">Selecciona</option>
+                        <option name="idiomas"     id="idiomas">Ingles</option>
+                        <option name="idiomas"     id="idiomas">Español</option>
+                        <option name="idiomas"     id="idiomas">italiano</option>
+                        <option name="idiomas"     id="idiomas">Frances</option>
+                        <option name="idiomas"     id="idiomas">Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="presupuesto">Presupuesto</label>
+                    <select name="presupuesto" id="presupuesto">
+                        <option name="presupuesto"     id="presupuesto">Selecciona</option>
+                        <option name="presupuesto"     id="presupuesto">$ 100</option>
+                        <option name="presupuesto"     id="presupuesto">$ 500</option>
+                        <option name="presupuesto"     id="presupuesto">$ 1.000</option>
+                        <option name="presupuesto"     id="presupuesto">$ 1.500</option>
+                        <option name="presupuesto"     id="presupuesto">$ 2.000</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="colum columna-items">
+            <div class="items">
+                <div class="imagen-items">
+                    <img src="/imagenes/diseñador.jpg" alt="Imagen 1" id="imagen-item">
+                </div>
+                <div class="texto-items">
+                    <h3 id="titulo-item">Diseño Grafico</h3>
+                    <p id="parrafo-item">1 año de experiencia</p>
+                    <p id="parrafo-item">Español</p>
+                    <p id="parrafo-item">$ 500</p>
+                </div>
+            </div>
+            <div class="items">
+                <div class="imagen-items">
+                    <img src="/imagenes/Programacion.jpg" alt="Imagen 1" id="imagen-item">
+                </div>
+                <div class="texto-items">
+                    <h3 id="titulo-item">Programacion</h3>
+                    <p id="parrafo-item">1 año de experiencia</p>
+                    <p id="parrafo-item">Español</p>
+                    <p id="parrafo-item">$ 500</p>
+                </div>
+            </div>
+            <div class="items">
+                <div class="imagen-items">
+                    <img src="/imagenes/marketing.jpg" alt="Imagen 1" id="imagen-item">
+                </div>
+                <div class="texto-items">
+                    <h3 id="titulo-item">Marketing</h3>
+                    <p id="parrafo-item">1 año de experiencia</p>
+                    <p id="parrafo-item">Español</p>
+                    <p id="parrafo-item">$ 500</p>
+                </div>
+            </div>
+            <div class="items item-match">
+                <div class="imagen-items">
+                    <img src="/imagenes/asis-virtual.jpg" alt="Imagen 1" id="imagen-item">
+                </div>
+                <div class="texto-items">
+                    <h3 id="titulo-item">Asistente virtual</h3>
+                    <p id="parrafo-item">1 año de experiencia</p>
+                    <p id="parrafo-item">Español</p>
+                    <p id="parrafo-item">$ 500</p>
+                </div>
+            </div>
+            <div class="items item-match">
+                <div class="imagen-items">
+                    <img src="/imagenes/copywritter.jpg" alt="Imagen 1" id="imagen-item">
+                </div>
+                <div class="texto-items">
+                    <h3 id="titulo-item">Copywritter</h3>
+                    <p id="parrafo-item">1 año de experiencia</p>
+                    <p id="parrafo-item">Español</p>
+                    <p id="parrafo-item">$ 500</p>
+                </div>
+            </div>
+            <div class="items item-match">
+                <div class="imagen-items">
+                    <img src="/imagenes/Manager.jpg" alt="Imagen 1" id="imagen-item">
+                </div>
+                <div class="texto-items">
+                    <h3 id="titulo-item">Manager</h3>
+                    <p id="parrafo-item">1 año de experiencia</p>
+                    <p id="parrafo-item">Español</p>
+                    <p id="parrafo-item">$ 500</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor-coincidencias">
+        <div class="titulo-coincidencias">
+            <h1 class="titulo-medio">Conexiones</h1>
+        </div>
+        <div class="fila-coincidencias">
+            <h2 class="item-conexiones">Coincidencias</h2>
+            <div class="item-conexiones">
+                <div class="imagen-item">
+                    <img src="/imagenes/diseñador.jpg" alt="Imagen 1" >
+                </div>
+                <div class="texto-item">
+                    <h3 id="titulo-item-matchs">Alex</h3>
+                    <p id="parrafo-item-matchs">Diiseño grafico.</p>
+                </div>
+            </div>
+            <div class="item-conexiones">
+                <div class="imagen-item">
+                    <img src="/imagenes/Programacion.jpg" alt="Imagen 1">
+                </div>
+                <div class="texto-item">
+                    <h3 id="titulo-item-matchs">Pedro</h3>
+                    <p id="parrafo-item-matchs">Programacion.</p>
+                </div>
+            </div>
+            <div class="item-conexiones">
+                <div class="imagen-item">
+                    <img src="/imagenes/marketing.jpg" alt="Imagen 1">
+                </div>
+                <div class="texto-item">
+                    <h3 id="titulo-item-matchs">Sofia</h3>
+                    <p id="parrafo-item-matchs">Marketing.</p>
+                </div>
+            </div>  
+        </div>
+        <div class="fila-coincidencias">
+            <h2 class="item-conexiones">Posibles Matchs </h2>
+            <div class="item-conexiones">
+                <div class="imagen-item">
+                    <img src="/imagenes/asis-virtual.jpg" alt="Imagen 1">
+                </div>
+                <div class="texto-item">
+                    <h3 id="titulo-item-matchs">Julia</h3>
+                    <p id="parrafo-item-matchs">Asistente virtual.</p>
+                </div>
+            </div>
+            <div class="item-conexiones">
+                <div class="imagen-item">
+                    <img src="/imagenes/Manager.jpg" alt="Imagen 1">
+                </div>
+                <div class="texto-item">
+                    <h3 id="titulo-item-matchs">Andres</h3>
+                    <p id="parrafo-item-matchs">Community manager.</p>
+                </div>
+            </div>
+            <div class="item-conexiones">
+                <div class="imagen-item">
+                    <img src="/imagenes/copywritter.jpg" alt="Imagen 1">
+                </div>
+                <div class="texto-item">
+                    <h3 id="titulo-item-matchs">Ivan</h3>
+                    <p id="parrafo-item-matchs">Copywritter.</p>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <footer>
+        <div class="redes-footer">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://tiktok.com" target="_blank">TikTok</a>
+        <a href="https://youtube.com" target="blank">YouTube</a>
+        </div>
+        <div class="nombre-footer">
+            <p>
+                MatchWork © 2025
+            </p>
+        </div>
+        <div class="terminos-footer">
+                <a href="/terminos">Términos y Condiciones</a> 
+                <a href="/privacidad">Política de Privacidad</a> 
+                <a href="/contacto">Contacto</a>
+        </div>
+        
+    </footer>
+</body>
+</html>
