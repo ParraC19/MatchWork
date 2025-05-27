@@ -11,56 +11,132 @@
       href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link rel="icon" href="/imagenes/favicon.png" />
+    <style>
+      img {
+        width: 150px;
+      }
+
+      header {
+        background-color: #6495ed;
+      }
+
+      body {
+        margin: 0;
+      }
+    </style>
   </head>
-  <body>
-    <header class="row">
-      <div class="col-4">
-        <a href="/index.html">
-          <img src="/imagenes/LogoMWblanco.png" class="logo-header" />
-        </a>
-      </div>
-      <div class="col-4">
-        <form>
-          <input
-            type="text"
-            name="buscador"
-            class="buscador-header"
-            placeholder="Buscar"
-          />
-        </form>
-      </div>
-      <div class="col-4">
-        <a href="/registros/registro.html" class="accion-header">
-          <button class="botones botones-header">Sign up</button>
-        </a>
-        <a href="/Inicio_sesion/inicio-sesion.html" class="accion-header">
-          <button class="botones botones-header">Log in</button>
-        </a>
-      </div>
+  <body class="m-0 p-0">
+    <header class="m-0 p-0" style="background-color: #6495ed">
+      <nav class="navbar navbar-expand-xxl navbar-dark w-100">
+        <div
+          class="container-fluid d-flex flex-wrap align-items-center justify-content-between"
+        >
+          <a class="navbar-brand" href="#">
+            <img
+              src="/imagenes/LogoMWblanco.png"
+              class="logo-header"
+              alt="MatchWork Logo"
+            />
+            <!-- Logo -->
+          </a>
+
+          <form
+            class="d-flex flex-grow-1 mx-3 w-25 justify-content-center"
+            role="search"
+          >
+            <!-- Buscador -->
+            <input
+              class="form-control w-75"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Buscar"
+            />
+          </form>
+
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- Botón navbar-->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <!--Menu navbar-->
+            <ul class="navbar-nav d-flex align-items-center">
+              <li class="nav-item px-5">
+                <a class="nav-link text-light" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item px-5">
+                <a
+                  class="nav-link text-light"
+                  href="/match_center/match_center.html"
+                  >Match Center</a
+                >
+              </li>
+              <li class="nav-item px-5">
+                <a
+                  class="nav-link text-light"
+                  href="/Inicio_sesion/inicio-sesion.html"
+                  >Log In</a
+                >
+              </li>
+              <li class="nav-item px-5">
+                <a class="nav-link text-light" href="/registros/registro.html"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <div class="contenedor_prin">
-      <div class="texto-matchwork">
-        <h1 class="titulo-inicio">MatchWork</h1>
+    <section class="contenedor_prin row m-0">
+      <div class="texto-matchwork row col-12">
+        <h1 class="titulo-inicio col-12 text-center">MatchWork</h1>
         <p class="parrafo-inicio">
           Conecta tu talento con quienes lo necesitan. Únete y descubre un mundo
           de oportunidades donde tus habilidades pueden marcar la diferencia.
         </p>
       </div>
-      <div>
-        <a href="/perfiles/cazador_profile.html" class="accion-inicio">
+      <div class="row">
+        <a
+          href="/perfiles/cazador_profile.html"
+          class="accion-inicio col-6 d-flex justify-content-end"
+        >
           <button class="botones botones-inicio">Buscar talento</button>
         </a>
-        <a href="/perfiles/talento_profile.html" class="accion-inicio">
+        <a
+          href="/perfiles/talento_profile.html"
+          class="accion-inicio col-6 d-flex justify-content-start"
+        >
           <button class="botones botones-inicio">Ofrecer talento</button>
         </a>
       </div>
-    </div>
-    <div class="contenedor-h2">
+    </section>
+    <div class="contenedor-h2 pt-5">
       <h2 class="titulo-medio">Conexiones</h2>
     </div>
-    <div class="contenedor-conexiones">
-      <div class="colum columna-1">
+    <div class="contenedor-conexiones row p-5">
+      <div class="colum columna-1 col-4 pt-5">
         <img src="/imagenes/persona-señal.png" alt="persona.png" />
         <div class="interaccion-match">
           <h3>Buscas a alguien?</h3>
@@ -71,7 +147,7 @@
           </a>
         </div>
       </div>
-      <div class="colum columna-2">
+      <div class="colum columna-2 col-8">
         <div class="items">
           <div class="imagen-items">
             <img
@@ -128,14 +204,14 @@
     </div>
     <div class="contenedor-final">
       <div class="contenedor-h2" id="titulo-bloque-final">
-        <h2 class="titulo-medio">Descubre</h2>
+        <h2 class="titulo-medio mb-5">Descubre</h2>
       </div>
-      <div class="bloque-central-final">
-        <div class="bloque-izquierdo">
-          <div id="titulo-bloques">
+      <div class="bloque-central-final row">
+        <div class="bloque-izquierdo col-sm-12 col-md-4 col-lg-3">
+          <div class="titulo-bloques">
             <h3>Encuentra al talento perfecto en minutos</h3>
           </div>
-          <div id="texto-bloque">
+          <div class="texto-bloque">
             <p>
               ¿Buscas a alguien para tu proyecto? Nuestra red reúne a
               profesionales verificados y apasionados en distintas áreas. Ahorra
@@ -144,11 +220,11 @@
             </p>
           </div>
         </div>
-        <div class="bloque-derecho">
-          <div id="titulo-bloques">
+        <div class="bloque-derecho col-sm-12 col-md-4 col-lg-3 p-0">
+          <div class="titulo-bloques">
             <h3>Conecta tu habilidad con el mundo.</h3>
           </div>
-          <div id="texto-bloque">
+          <div class="texto-bloque">
             <p>
               En nuestra plataforma, tu talento no pasa desapercibido. Aquí
               puedes mostrar tu experiencia, encontrar oportunidades reales y
@@ -158,31 +234,36 @@
           </div>
         </div>
       </div>
-      <div class="bloque-final">
-        <ul class="lista">
-          <li>Programacion Web</li>
-          <li>Marketing</li>
-          <li>Asistentes virtual</li>
-          <li>Community manager</li>
-          <li>Diseñador grafico</li>
-          <li>Copywriter</li>
+      <div class="bloque-final row">
+        <ul class="lista col-8">
+          <li class="col-6">Programacion Web</li>
+          <li class="col-6">Marketing</li>
+          <li class="col-6">Asistentes virtual</li>
+          <li class="col-6">Community manager</li>
+          <li class="col-6">Diseñador grafico</li>
+          <li class="col-6">Copywriter</li>
         </ul>
       </div>
     </div>
-    <footer>
-      <div class="redes-footer">
+    <footer class="row">
+      <div class="redes-footer col-4">
         <a href="https://instagram.com" target="_blank">Instagram</a>
         <a href="https://tiktok.com" target="_blank">TikTok</a>
         <a href="https://youtube.com" target="blank">YouTube</a>
       </div>
-      <div class="nombre-footer">
-        <p>MatchWork © 2025</p>
-      </div>
-      <div class="terminos-footer">
+      <div class="terminos-footer col-4">
         <a href="/terminos">Términos y Condiciones</a>
         <a href="/privacidad">Política de Privacidad</a>
         <a href="/contacto">Contacto</a>
       </div>
+      <div class="nombre-footer col-10">
+        <p>MatchWork © 2025</p>
+      </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

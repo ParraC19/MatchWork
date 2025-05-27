@@ -7,20 +7,26 @@ body {
 
 header {
     display: inline-flex;
-    height: 100px;
+   ;
     width: 100%;
     justify-content: space-around;
     padding: 5px;
     background-color: #6495ed;
-    position: fixed;
+    position: fixed; 
     top: 0;
     left: 0;
     z-index: 1000;
 }
 
+@media (max-width: 768px) {
+    header {
+        position: unset;
+    }
+}
+
 header div {
     width: 30%;
-    height: 100px;
+   ;
     align-content: center;
     text-align: center;
 }
@@ -32,11 +38,13 @@ header div p {
     margin-right: 20px;
 }
 
-
+.navbar-toggler-icon {
+    color: #ffffff;
+}
 
 .logo-header {
     width: 100px;
-    height: 100%;
+   
     border-radius: 10px;
     float: left
     ;
@@ -49,14 +57,16 @@ header div p {
     padding: 0 10px;
     border: none;
     width: 300px;
-    height: 30px;
+   
     color: #6495ed;
 }
+
+
 
 .botones-header {
     margin: 0 5px;
     float: right;
-    height: 30px;
+   
     width: 100px;
 }
 
@@ -97,7 +107,7 @@ header div p {
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
-    height: 88vh;
+    height: 100vh;
     background-color: #fff;
 }
 
@@ -107,12 +117,29 @@ header div p {
     font-size: 100px;
     color: #ffffff;
     letter-spacing: 2px;
-    height:100px ;
+    justify-content: center;
     text-shadow:
     -3px -3px 0 #6495ed,
     3px -3px 0 #6495ed,
     -3px 3px 0 #6495ed,
     3px 3px 0 #6495ed; 
+}
+
+@media (max-width:768px ){
+    .titulo-inicio {
+        font-size: 70px;
+        letter-spacing: 1px;
+        text-shadow:
+    -2px -2px 0 #6495ed,
+    2px -2px 0 #6495ed,
+    -2px 2px 0 #6495ed,
+    2px 2px 0 #6495ed;
+    }
+
+    .contenedor_prin {
+        padding-top: 10px;
+        height: 50vh;
+    }
 }
 
 .parrafo-inicio {
@@ -135,11 +162,15 @@ a {
     font-size: 16px;
 }
 
+.accion-inicio {
+    text-decoration: none
+}
+
 .botones-inicio {
     margin: 0 20px;
     padding: 0 5px;
     border-radius: 50px;
-    height: 40px;
+   height: 50px;
     width: 120px;
     
     border: 1px solid #6495ed;
@@ -149,6 +180,7 @@ a {
     background-color: #ffffff;
     color: #6495ed;
     transition: 1s;
+    text-decoration: none;
 }
 
 .contenedor-h2 {
@@ -156,6 +188,12 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .contenedor-conexiones {
+        flex-direction: column-reverse;
+    }
 }
 
 .titulo-medio {
@@ -172,7 +210,7 @@ a {
 .contenedor-conexiones {
     display: inline-flex;
     width: 100%;
-    height: 70vh;
+   
     margin: 0;
     align-items: center;
     justify-content: center;
@@ -182,7 +220,7 @@ a {
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 100%;
+   
     justify-content: center;
     align-items: center;
 }
@@ -202,9 +240,21 @@ a {
     gap: 50px;
     max-width: 600px;
     margin: 0;
-    max-height: 50%;
+    
     align-content: center;
     
+}
+
+@media (max-width:768px) {
+    .columna-1 img {
+        width: 250px;
+    }
+
+    .columna-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    }
 }
 
 .items {
@@ -218,7 +268,7 @@ a {
 
 .imagen-items {
     width: 10rem;
-    height: 10rem;
+   ;
     border: 2px solid #fff;
     border-radius: 10px;
 }
@@ -241,7 +291,7 @@ a {
 .contenedor-final {
     display: flex;
     flex-direction: column;
-    height: 90vh;
+   
     margin: 40px 0;
     justify-content: center;
 }
@@ -250,7 +300,7 @@ a {
     display: flex
 ;
     width: 100%;
-    height: 250px;
+   ;
     justify-content: space-evenly;
     margin: 50px auto;
 }
@@ -258,38 +308,37 @@ a {
 .bloque-izquierdo, .bloque-derecho {
     text-align: center;
     width: 350px;
-    height: 250px;
     background-color: #6495ed;
     border-radius: 30px;
 }
 
-#titulo-bloques {
+.titulo-bloques {
     color: #fff;
     letter-spacing: 1px;
-    height: 30%;
+
     align-content: center;
     margin: 20px 20px 0 20px;
 }
 
-#titulo-bloques h3 {
+.titulo-bloques h3 {
     font-size: 20px;
 }
 
 
-#texto-bloque {
+.texto-bloque {
     color: #fff;
     padding: 0 20px;
     margin: 20px;
     align-items: flex-start; 
 }
 
-#texto-bloque p {
+.texto-bloque p {
     font-size: 14px;
 }
 
 .bloque-final {
     width: 100%;
-    height: 110px;
+   ;
 
 }
 
@@ -297,27 +346,58 @@ a {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     width: 50%;
-    gap: 20px;
+    gap: 10px;
     color: #6495ed;
     margin: 0 auto;
     justify-items: center;    
 }
 
 .lista li {
-    height: 40px;
+   
     width: 100px;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+@media (max-width:768px) {
+    .lista {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 25px;
+    }
+
+    .bloque-derecho, .bloque-izquierdo {
+        margin: 10px;
+        width: 300px;
+    }
+
+    
 }
 
 footer {
     display: inline-flex;
-    
+    height: 25vh;
     width: 100%;
-    height: 20vh;
+   
     background-color: #6495ed;
     color: #fff;
     justify-content: space-around;
 }
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .nombre-footer {
+    justify-content: center;
+}
+
+footer .terminos-footer, footer .redes-footer {
+    margin-top: 10px;
+}
+
+
+
 
 .redes-footer {
     display: flex;
@@ -344,11 +424,32 @@ footer {
     align-items: center;
 }
 
+@media (max-width:768px) {
+    .lista {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 25px;
+    }
+
+    .bloque-derecho, .bloque-izquierdo {
+        margin: 10px;
+        width: 300px;
+    }
+
+   footer {
+    text-align: center;
+   }
+
+   footer .nombre-footer {
+    justify-content: center;
+   }
+}
+
 .inicio-sesion {
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 350px;
+   ;
     justify-content: flex-start;
     background-color: #6495ed;
     border-radius:20px ;
@@ -364,7 +465,7 @@ footer {
     color: #fff;
     display: flex;
     flex-direction: column;
-    height: 160px; 
+   ; 
     align-items: center;
 }
 
@@ -380,13 +481,13 @@ text-align: center;
 
 .boton-sesion {
     margin: 10px 5px;
-    height: 30px;
+   
     width: 70px;
     
 }
 
 .accion-sesion {
-    height: 30px;
+   
     width: 70px;
 }
 
@@ -397,8 +498,8 @@ text-align: center;
 }
 
 .signup, .login {
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     display: grid;
     place-items: center;
 }
@@ -409,7 +510,7 @@ text-align: center;
     display: flex;
     flex-direction: column;
     width: 600px;
-    height: 600px;
+   ;
     background-color: #6495ed;
     border-radius:20px ;
     gap: 0px;
@@ -419,12 +520,12 @@ text-align: center;
 
 .logo-registro, .logo-registro img {
     width: 150px;
-    height: 150px;
+   ;
 }
 
 .titulo-registro {
     display: flex;
-    height: 15%;
+
     align-items: center;
     ;
 }
@@ -440,7 +541,7 @@ text-align: center;
     grid-template-rows: repeat(4,auto);
     gap: 8px;
     max-width: 600px;
-    height: 70%;
+
     margin: 0 auto;
     justify-items:center ;
 }
@@ -449,7 +550,7 @@ text-align: center;
     border-radius: 30px;
     border: none;
     width: 150px;
-    height: 25px;
+   
     margin-top: 5px ;
     text-align: center;
     color: #6495ed;
@@ -460,14 +561,14 @@ text-align: center;
     color: #6495ed;
     border: none;
     border-radius: 30px;
-    height: 25px;
+   
     width: 150px;
     padding: 0px 6px;
     margin-top: 5px;
 }
 
 .espacio-boton-registro {
-    height: 15%;
+
     display: flex;
     grid-column: span 2;
 }
@@ -475,7 +576,7 @@ text-align: center;
 .boton-registro {
     margin: 10px;
     width: 100px;
-    height: 30px;
+   
     border-radius: 30px;
 }
 
@@ -507,7 +608,7 @@ text-align: center;
 
 .foto-portada {
     width: 100%;
-    height: 200px;
+   ;
     object-fit: cover;
     display: block;
     z-index: 1;
@@ -520,7 +621,7 @@ text-align: center;
     left: 50%;
     transform: translateX(-50%);
     width: 100px;
-    height: 100px;
+   ;
     border-radius: 50%;
     border: 4px solid white;
     object-fit: cover;
@@ -549,7 +650,7 @@ text-align: center;
     display: flex;
     flex-direction: column;
     width: 200px;
-    height: 200px;
+   ;
     margin: 0 20px;
     padding: 20px;
     gap: 10px;
@@ -603,7 +704,7 @@ text-align: center;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 100vh;
+   ;
     margin-bottom: 20px;
 }
 
@@ -621,7 +722,7 @@ text-align: center;
 
 .item-proyecto {
     width: 450px;
-    height: 120px;
+   ;
     margin: 10px;
 }
 
@@ -676,7 +777,7 @@ text-align: center;
 
 .contenedor-filtros {
     flex-direction: column;
-    height: 420px;
+   ;
     width: 200px;
     display: flex;
     gap: 15px;
@@ -693,7 +794,7 @@ text-align: center;
 .contenedor-filtros label {
     background-color: #6495ed;
     width: 150px;
-    height: 50%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -726,7 +827,7 @@ text-align: center;
     display:flex;
     justify-content: flex-start;
     width: 100%;
-    height: 70vh;
+   
     margin: 0;
     align-items: flex-start;
 
@@ -739,7 +840,6 @@ text-align: center;
     gap: 50px;
     max-width: 950px;
     margin: 0;
-    max-height: 420px;
     align-content: center;
 }
 
@@ -758,7 +858,7 @@ text-align: center;
     margin: 0px;
     color: #ffffff;
     letter-spacing: 2px;
-    height:100px ;
+    
     text-shadow:
     -3px -3px 0 #6495ed,
     3px -3px 0 #6495ed,
@@ -774,7 +874,7 @@ text-align: center;
 
 .nombre-usuario-header p {
     color: #fff;
-    height: 30px;
+   
     width: 100px;
     float: right;
     margin: 10px;
@@ -800,7 +900,7 @@ text-align: center;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+   
     align-items: center;
     
 }
@@ -808,7 +908,7 @@ text-align: center;
 .fila-coincidencias {
     display: flex;
     width: 800px;
-    height: 200px;
+   ;
     justify-content: space-around;
     align-items: center;
     margin: 20px;
@@ -830,7 +930,7 @@ text-align: center;
     font-size: 18px;
     gap: 5px;
     width: 200px;
-    height: 200px;
+   ;
     background-color: #6495ed;
 }
 
