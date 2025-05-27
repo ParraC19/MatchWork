@@ -219,7 +219,7 @@ a {
 .contenedor-final {
     display: flex;
     flex-direction: column;
-    height: 79vh;
+    height: 90vh;
 }
 
 .bloque-central-final {
@@ -300,6 +300,7 @@ footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: flex-start;
+    align-items: center;
 }
 
 .terminos-footer {
@@ -309,6 +310,7 @@ footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: flex-end;
+    align-items: center;
 }
 
 .nombre-footer {
@@ -321,7 +323,7 @@ footer {
     flex-direction: column;
     width: 300px;
     height: 350px;
-    margin: 289px auto;
+    margin: 200px auto;
     justify-content: center;
     background-color: #6495ed;
     border-radius:20px ;
