@@ -3,56 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Perfil Cazador</title>
-    <link rel="stylesheet" href="/estilos.css" />
+    <title>Pompilio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link rel="icon" href="/imagenes/favicon.png" />
+    <link rel="stylesheet" href="/estilos.css" />
   </head>
-  <body>
-    <header>
-      <div>
-        <a href="/index.html">
-          <img src="/imagenes/LogoMWblanco.png" class="logo-header" />
-        </a>
-      </div>
-      <div>
-        <form>
-          <input
-            type="text"
-            name="buscador"
-            class="buscador-header"
-            placeholder="Buscar"
-          />
-        </form>
-      </div>
-      <div>
-        <a href="/perfiles/cazador_profile.html">
-          <p>Cazador1</p>
-        </a>
-      </div>
+  <body class="m-0 p-0">
+    <header class="m-0 p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark w-100">
+        <div
+          class="container-fluid d-flex flex-wrap align-items-center justify-content-between p-0"
+        >
+          <a class="navbar-brand child-header" href="/index.html">
+            <img
+              src="/imagenes/LogoMWblanco.png"
+              class="logo-header"
+              alt="MatchWork Logo"
+            />
+          </a>
+
+          <form
+            class="d-flex flex-grow-1 mx-3 child-header w-25 justify-content-center"
+            role="search"
+          >
+            <input
+              class="form-control w-50"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Buscar"
+            />
+          </form>
+
+          <button
+            class="navbar-toggler child-header border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav d-flex align-items-center">
+              <li class="nav-item px-0">
+                <a class="nav-link text-light b-radius-0" href="/index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item px-0">
+                <a
+                  class="nav-link text-light"
+                  href="/match_center/match_center.html"
+                  >Match Center</a
+                >
+              </li>
+              <li class="nav-item px-0">
+                <a
+                  class="nav-link text-light"
+                  href="/perfiles/cazador_profile.html"
+                  >Perfil</a
+                >
+              </li>
+              <li class="nav-item px-0">
+                <a class="nav-link text-light" href="/registros/registro.html"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <div class="contenedor-fotos-user">
-      <img
-        src="/imagenes/portada-perfil.jpg"
-        alt="foto-portada.jpg"
-        class="foto-portada"
-      />
-      <img
-        src="/imagenes/foto-perfil.jpg"
-        alt="foto-perfil.jpg"
-        class="foto-perfil"
-      />
-    </div>
-    <div class="contenedor-nombre-perfil">
-      <h1>Cazador pompilio</h1>
-    </div>
-    <div class="contenedor-info-user">
-      <div class="info-cazador">
+    <section class="container contenedor-info">
+      <div class="contenedor-fotos-user">
+        <img
+          src="/imagenes/portada-perfil.jpg"
+          alt="foto-portada.jpg"
+          class="foto-portada col-12"
+        />
+        <img
+          src="/imagenes/foto-perfil.jpg"
+          alt="foto-perfil.jpg"
+          class="foto-perfil col-12"
+        />
+
+        <div class="contenedor-nombre-perfil">
+          <h1>Cazador pompilio</h1>
+        </div>
+      </div>
+    </section>
+    <section class="contenedor-info-user row">
+      <div class="info-user col-6">
         <div>
           <h2>Informacion</h2>
         </div>
@@ -69,7 +130,7 @@
           <p>Persona individual / Empresa</p>
         </div>
       </div>
-      <div class="contacto-cazador">
+      <div class="info-user col-6">
         <div>
           <h2>Contacto</h2>
         </div>
@@ -80,7 +141,7 @@
         <div>
           <h3>Sitio Web</h3>
           <a href="https://www.cazador-pompilio.com" target="_blank"
-            >cazador-pompilio.com</a
+            >cazadorpompilio.com</a
           >
         </div>
         <div>
@@ -90,17 +151,17 @@
           >
         </div>
       </div>
-    </div>
-    <div class="titulo-portafolio-cazador">
+    </section>
+    <div class="titulo-portafolio-user">
       <h2>Proyectos</h2>
     </div>
-    <div class="contenedor-contenido-user">
-      <div class="contenedor-proyectos">
-        <div class="items item-proyecto">
-          <div class="imagen-proyecto">
+    <section class="contenedor-contenido-user">
+      <div class="contenedor-proyectos row pb-5 d-flex justify-content-center">
+        <div class="items item-proyecto-cz col-8 col-sm-8 col-md-4 col-lg-4">
+          <div class="imagen-proyecto-cz">
             <img src="/imagenes/diseñador.jpg" alt="imagen-item" />
           </div>
-          <div class="info-proyecto">
+          <div class="info-proyecto-cz">
             <h3>Plataforma de gestión financiera inteligente</h3>
             <p>
               Solución basada en IA para optimizar presupuestos y tomar
@@ -110,11 +171,11 @@
             <p>Presupuesto: $50,000 USD</p>
           </div>
         </div>
-        <div class="items item-proyecto">
-          <div class="imagen-proyecto">
+        <div class="items item-proyecto-cz col-8 col-sm-8 col-md-4 col-lg-4">
+          <div class="imagen-proyecto-cz">
             <img src="/imagenes/marketing.jpg" alt="imagen-item" />
           </div>
-          <div class="info-proyecto">
+          <div class="info-proyecto-cz">
             <h3>Aplicación de pedidos automatizados para cafeterías</h3>
             <p>
               Software intuitivo que agiliza pedidos, pagos y tiempos de espera
@@ -124,11 +185,11 @@
             <p>Presupuesto: $30,000 USD</p>
           </div>
         </div>
-        <div class="items item-proyecto">
-          <div class="imagen-proyecto">
+        <div class="items item-proyecto-cz col-8 col-sm-8 col-md-4 col-lg-4">
+          <div class="imagen-proyecto-cz">
             <img src="/imagenes/Programacion.jpg" alt="imagen-item" />
           </div>
-          <div class="info-proyecto">
+          <div class="info-proyecto-cz">
             <h3>Sistema de monitoreo de redes basado en blockchain</h3>
             <p>
               Plataforma descentralizada para asegurar la integridad y
@@ -140,28 +201,33 @@
         </div>
       </div>
       <div class="interaccion-match">
-        <h3>Buscas a alguien?</h3>
+        <h3>Encuentra tu talento</h3>
         <a href="/match_center/match_center.html" class="accion-perfil">
           <button class="botones boton-interaccion-perfil">
             Encuentra cazadores
           </button>
         </a>
       </div>
-    </div>
-    <footer>
-      <div class="redes-footer">
+    </section>
+    <footer class="row">
+      <div class="redes-footer col-4">
         <a href="https://instagram.com" target="_blank">Instagram</a>
         <a href="https://tiktok.com" target="_blank">TikTok</a>
         <a href="https://youtube.com" target="blank">YouTube</a>
       </div>
-      <div class="nombre-footer">
-        <p>MatchWork © 2025</p>
-      </div>
-      <div class="terminos-footer">
+      <div class="terminos-footer col-4">
         <a href="/terminos">Términos y Condiciones</a>
         <a href="/privacidad">Política de Privacidad</a>
         <a href="/contacto">Contacto</a>
       </div>
+      <div class="nombre-footer col-10">
+        <p>MatchWork © 2025</p>
+      </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -3,51 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up</title>
-    <link rel="stylesheet" href="/estilos.css" />
+    <title>Sign Up</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link rel="icon" href="/imagenes/favicon.png" />
+    <link rel="stylesheet" href="/estilos.css" />
   </head>
-  <body>
-    <section class="signup">
-      <div class="contenedor-registro">
-        <div class="logo-registro">
-          <a href="/index.html">
-            <img src="/imagenes/LogoMWblanco.png" alt="Logo.png" />
+  <body class="m-0 p-0">
+    <header class="m-0 p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark w-100">
+        <div
+          class="container-fluid d-flex flex-wrap align-items-center justify-content-between p-0"
+        >
+          <a class="navbar-brand child-header" href="/index.html">
+            <img
+              src="/imagenes/LogoMWblanco.png"
+              class="logo-header"
+              alt="MatchWork Logo"
+            />
           </a>
-        </div>
-        <div class="titulo-registro">
-          <h1>Crea una cuenta</h1>
-        </div>
 
+          <form
+            class="d-flex flex-grow-1 mx-3 child-header w-25 justify-content-center"
+            role="search"
+          >
+            <input
+              class="form-control w-50"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Buscar"
+            />
+          </form>
+
+          <button
+            class="navbar-toggler child-header border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul
+              class="navbar-nav d-flex align-items-center justify-content-center"
+            >
+              <li class="nav-item px-0">
+                <a class="nav-link text-light b-radius-0" href="/index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item px-0">
+                <a
+                  class="nav-link text-light"
+                  href="/match_center/match_center.html"
+                  >Match Center</a
+                >
+              </li>
+              <li class="nav-item px-0">
+                <a
+                  class="nav-link text-light"
+                  href="/Inicio_sesion/inicio-sesion.html"
+                  >Log In</a
+                >
+              </li>
+              <li class="nav-item px-0">
+                <a class="nav-link text-light" href="/registros/registro.html"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="signup mt-5">
+      <div class="contenedor-registro row d-flex">
+        <div class="row title-sigup d-flex justify-content-center">
+          <div
+            class="logo-registro col-6 col-sm-5 col-md-12 col-lg-12 d-flex justify-content-center"
+          >
+            <a href="/index.html">
+              <img src="/imagenes/LogoMWblanco.png" alt="Logo.png" />
+            </a>
+          </div>
+
+          <div
+            class="titulo-registro d-flex justify-content-center col-6 col-sm-5 col-md-12 col-lg-12"
+          >
+            <h1>Crea una cuenta</h1>
+          </div>
+        </div>
         <form
           action="/Inicio_sesion/inicio-sesion.html"
           method="get"
           autocomplete="on"
-          class="registro"
+          class="registro row d-flex justify-content-center container-fluid"
         >
-          <div class="campo-registro">
+          <div class="campo-registro col-12 col-sm-12 col-md-4 col-lg-4">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required />
           </div>
-          <div class="campo-registro">
+          <div class="campo-registro col-12 col-sm-12 col-md-4 col-lg-4">
             <label for="apellidos">Apellidos:</label>
             <input type="text" id="apellidos" name="apellidos" required />
           </div>
-          <div class="campo-registro">
+          <div class="campo-registro col-12 col-sm-12 col-md-4 col-lg-4">
             <label for="correo">Correo Electronico:</label>
             <input type="email" id="correo" name="email" required />
           </div>
-          <div class="campo-registro">
+          <div class="campo-registro col-12 col-sm-12 col-md-4 col-lg-4">
             <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password" required />
           </div>
-          <div class="campo-registro">
+          <div class="campo-registro col-12 col-sm-12 col-md-4 col-lg-4">
             <label for="repeatpassword">Repetir contraseña:</label>
             <input
               type="password"
@@ -56,7 +144,7 @@
               required
             />
           </div>
-          <div class="campo-registro">
+          <div class="campo-registro col-12 col-sm-12 col-md-4 col-lg-4">
             <label for="genero">Genero:</label>
             <select id="genero" name="genero" required>
               <option value="Seleccionar">Seleccionar</option>
@@ -65,7 +153,7 @@
               <option value="otro">Otro</option>
             </select>
           </div>
-          <div class="campo-registro">
+          <div class="campo-registro col-12 col-sm-12 col-md-4 col-lg-4">
             <label for="pais">Pais:</label>
             <select id="pais" name="pais" required>
               <option value="Seleccionar">Seleccionar</option>
@@ -74,7 +162,7 @@
               <option value="argentina">Argentina</option>
             </select>
           </div>
-          <div class="campo-registro-radius">
+          <div class="campo-registro col-12 col-sm-12 col-md-4 col-lg-4">
             <label for="Match">¿Que quieres ser?</label>
             <select name="quien-es" id="quien-es">
               <option name="quien-es" id="quien-es">Seleccionar</option>
@@ -82,7 +170,7 @@
               <option name="quien-es" id="quien-es">Ser cazador</option>
             </select>
           </div>
-          <div class="espacio-boton-registro">
+          <div class="espacio-boton-registro col-12 justify-content-center">
             <a href="/Inicio_sesion/inicio-sesion.html" class="accion-registro">
               <button class="botones boton-registro" type="submit">
                 Enviar
@@ -92,5 +180,10 @@
         </form>
       </div>
     </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

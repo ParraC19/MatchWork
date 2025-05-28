@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MatchWork</title>
-    <link rel="stylesheet" href="/estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,42 +21,29 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <link rel="icon" href="/imagenes/favicon.png" />
-    <style>
-      img {
-        width: 150px;
-      }
-
-      header {
-        background-color: #6495ed;
-      }
-
-      body {
-        margin: 0;
-      }
-    </style>
+    <link rel="stylesheet" href="/estilos.css" />
   </head>
   <body class="m-0 p-0">
-    <header class="m-0 p-0" style="background-color: #6495ed">
-      <nav class="navbar navbar-expand-xxl navbar-dark w-100">
+    <header class="m-0 p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark w-100">
         <div
-          class="container-fluid d-flex flex-wrap align-items-center justify-content-between"
+          class="container-fluid d-flex flex-wrap align-items-center justify-content-between p-0"
         >
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand child-header" href="/index.html">
             <img
               src="/imagenes/LogoMWblanco.png"
               class="logo-header"
               alt="MatchWork Logo"
             />
-            <!-- Logo -->
           </a>
 
           <form
-            class="d-flex flex-grow-1 mx-3 w-25 justify-content-center"
+            class="d-flex flex-grow-1 mx-3 child-header w-25 justify-content-center"
             role="search"
           >
             <!-- Buscador -->
             <input
-              class="form-control w-75"
+              class="form-control w-50"
               type="search"
               placeholder="Buscar"
               aria-label="Buscar"
@@ -65,7 +51,7 @@
           </form>
 
           <button
-            class="navbar-toggler border-0"
+            class="navbar-toggler child-header border-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -82,24 +68,26 @@
           >
             <!--Menu navbar-->
             <ul class="navbar-nav d-flex align-items-center">
-              <li class="nav-item px-5">
-                <a class="nav-link text-light" href="/index.html">Inicio</a>
+              <li class="nav-item px-0">
+                <a class="nav-link text-light b-radius-0" href="/index.html"
+                  >Inicio</a
+                >
               </li>
-              <li class="nav-item px-5">
+              <li class="nav-item px-0">
                 <a
                   class="nav-link text-light"
                   href="/match_center/match_center.html"
                   >Match Center</a
                 >
               </li>
-              <li class="nav-item px-5">
+              <li class="nav-item px-0">
                 <a
                   class="nav-link text-light"
                   href="/Inicio_sesion/inicio-sesion.html"
                   >Log In</a
                 >
               </li>
-              <li class="nav-item px-5">
+              <li class="nav-item px-0">
                 <a class="nav-link text-light" href="/registros/registro.html"
                   >Sign Up</a
                 >
@@ -109,10 +97,10 @@
         </div>
       </nav>
     </header>
-    <section class="contenedor_prin row m-0">
-      <div class="texto-matchwork row col-12">
-        <h1 class="titulo-inicio col-12 text-center">MatchWork</h1>
-        <p class="parrafo-inicio">
+    <section class="contenedor-prin row d-flex flex.column m-0 p-5">
+      <div class="texto-matchwork row p-0">
+        <h1 class="titulo-inicio col-10 text-center p-0">MatchWork</h1>
+        <p class="parrafo-inicio col-10">
           Conecta tu talento con quienes lo necesitan. Únete y descubre un mundo
           de oportunidades donde tus habilidades pueden marcar la diferencia.
         </p>
@@ -132,13 +120,13 @@
         </a>
       </div>
     </section>
-    <div class="contenedor-h2 pt-5">
+    <div class="contenedor-h2 p-5">
       <h2 class="titulo-medio">Conexiones</h2>
     </div>
-    <div class="contenedor-conexiones row p-5">
+    <section class="contenedor-conexiones row p-5">
       <div class="colum columna-1 col-4 pt-5">
         <img src="/imagenes/persona-señal.png" alt="persona.png" />
-        <div class="interaccion-match">
+        <div class="interaccion-match pe-5">
           <h3>Buscas a alguien?</h3>
           <a href="/match_center/match_center.html" class="accion-perfil">
             <button class="botones boton-interaccion-perfil">
@@ -147,7 +135,7 @@
           </a>
         </div>
       </div>
-      <div class="colum columna-2 col-8">
+      <div class="colum columna-2 col-8 p-0">
         <div class="items">
           <div class="imagen-items">
             <img
@@ -201,13 +189,13 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="contenedor-final">
+    </section>
+    <section class="contenedor-final row">
       <div class="contenedor-h2" id="titulo-bloque-final">
         <h2 class="titulo-medio mb-5">Descubre</h2>
       </div>
       <div class="bloque-central-final row">
-        <div class="bloque-izquierdo col-sm-12 col-md-4 col-lg-3">
+        <div class="bloque-izquierdo col-sm-8 col-md-4 col-lg-4 p-0">
           <div class="titulo-bloques">
             <h3>Encuentra al talento perfecto en minutos</h3>
           </div>
@@ -220,7 +208,7 @@
             </p>
           </div>
         </div>
-        <div class="bloque-derecho col-sm-12 col-md-4 col-lg-3 p-0">
+        <div class="bloque-derecho col-sm-8 col-md-4 col-lg-4 p-0">
           <div class="titulo-bloques">
             <h3>Conecta tu habilidad con el mundo.</h3>
           </div>
@@ -244,7 +232,7 @@
           <li class="col-6">Copywriter</li>
         </ul>
       </div>
-    </div>
+    </section>
     <footer class="row">
       <div class="redes-footer col-4">
         <a href="https://instagram.com" target="_blank">Instagram</a>
